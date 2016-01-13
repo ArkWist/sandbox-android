@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         String[] favoriteGames = {"Fire Emblem", "Final Fantasy", "StarCraft", "Valkyrie Profile", "Valkyria Chronicles", "Zero Escape", "Ikaruga", "Pokemon", "Nier"};
 
-        ListAdapter theAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, favoriteGames);
+        ListAdapter theAdapter = new ArrayAdapter<String>(this, R.layout.row_layout, R.id.textView1, favoriteGames);
 
         ListView theListView = (ListView) findViewById(R.id.theListView);
 
