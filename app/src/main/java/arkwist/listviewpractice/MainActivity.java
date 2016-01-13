@@ -19,6 +19,8 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import arkwist.listviewpractice.*;
+
 public class MainActivity extends AppCompatActivity {
 
     /**
@@ -45,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         String[] favoriteGames = {"Fire Emblem", "Final Fantasy", "StarCraft", "Valkyrie Profile", "Valkyria Chronicles", "Zero Escape", "Ikaruga", "Pokemon", "Nier"};
 
-        ListAdapter theAdapter = new ArrayAdapter<String>(this, R.layout.row_layout, R.id.textView1, favoriteGames);
+        ListAdapter theAdapter = new MyAdapter<String>(this, /*R.layout.row_layout_2, R.id.textView1, */favoriteGames);
 
         ListView theListView = (ListView) findViewById(R.id.theListView);
 
